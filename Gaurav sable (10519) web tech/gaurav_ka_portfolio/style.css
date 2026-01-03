@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ---------- GLOBAL ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #b74b4b;
+}
+
+nav a {
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 3.5rem;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+}
+
+/* Hamburger */
+#menu-icon {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    min-height: 100vh;
+    padding: 8rem 9%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    color: #b74b4b;
+    margin-bottom: 5rem;
+}
+
+/* ---------- HOME ---------- */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.home-img img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.home-content h1 {
+    font-size: 5.5rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.home-content p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Typing text */
+.typing-text span::before {
+    content: "AI & ML Student";
+    color: #b74b4b;
+    animation: words 12s infinite;
+}
+
+@keyframes words {
+    0% {
+        content: "AI & ML Student";
+    }
+
+    25% {
+        content: "Aspiring Data Scientist";
+    }
+
+    50% {
+        content: "Python Developer";
+    }
+
+    75% {
+        content: "Web Developer";
+    }
+
+    100% {
+        content: "Tech Enthusiast";
+    }
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.2rem solid #b74b4b;
+    color: #b74b4b;
+    margin: 2.5rem 1.2rem 0 0;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #b74b4b;
+    color: black;
+    transform: scale(1.2);
+}
+
+/* ---------- PROJECTS ---------- */
+.projects {
+    background-color: #0d0d0d;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    background-color: #161616;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+}
+
+.project-card h3 {
+    font-size: 2.2rem;
+}
+
+.project-card p {
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+}
+
+.tech {
+    color: #b74b4b;
+    font-size: 1.3rem;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.6rem;
+    border-radius: 2rem;
+    border: 1px solid #b74b4b;
+    color: #b74b4b;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    background-color: #b74b4b;
+    color: black;
+}
+
+/* ---------- SKILLS ---------- */
+.skills-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 2.5rem;
+}
+
+.skill span {
+    font-size: 1.6rem;
+}
+
+.progress-bar {
+    height: 1.2rem;
+    background-color: #222;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+}
+
+.progress {
+    height: 100%;
+    background-color: #b74b4b;
+    border-radius: 1rem;
+}
+
+.progress.c {
+    width: 80%;
+}
+
+.progress.python {
+    width: 70%;
+}
+
+.progress.html {
+    width: 85%;
+}
+
+.progress.css {
+    width: 75%;
+}
+
+.progress.ml {
+    width: 60%;
+}
+
+/* ---------- EDUCATION ---------- */
+.timeline {
+    background-color: #0d0d0d;
+}
+
+.timeline-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline-item {
+    background-color: #161616;
+    padding: 2.5rem;
+    border-left: 4px solid #b74b4b;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateX(10px);
+}
+
+.timeline-date {
+    color: #b74b4b;
+    font-size: 1.3rem;
+}
+
+.timeline-item h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.timeline-item p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ---------- CONTACT ---------- */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-info p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    color: #b74b4b;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    background-color: #161616;
+    color: white;
+    border-radius: 0.8rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 995px) {
+    #menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #161616;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
