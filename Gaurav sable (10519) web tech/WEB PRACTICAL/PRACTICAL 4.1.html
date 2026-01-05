@@ -1,0 +1,42 @@
+<!-- 15. DOM manipulation using getElementById, querySelector, innerHTML -->
+<!DOCTYPE html>
+<html>
+    <head><style>
+     header {
+        background-color: rgb(108, 119, 244);
+        color: aqua;
+        align-self: center;
+     }
+     form {
+        background-color: antiquewhite;
+     }
+       body {
+background-color: rgb(117, 67, 2);
+}
+h1 {
+    background-color: rgb(217, 231, 238);
+} 
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;" id="12">I am developer <div>age</div></h1>
+    <h2>gaurav ki practice</h2>
+    <p>lets learn about DOM consept in detail</p>
+    <button style="color: blue" id = "botn">click me !</button>
+    <script src="first.js"></script>
+    </body></head>
+<body>
+
+<p id="p1">Old Text</p>
+<p class="p2">Hello</p>
+<button onclick="change()">Change</button>
+
+<script>
+function change() {
+  document.getElementById("p1").innerHTML = "Changed using getElementById";
+  document.querySelector(".p2").innerHTML = "Changed using querySelector";
+}
+</script>
+
+</body>
+</html>

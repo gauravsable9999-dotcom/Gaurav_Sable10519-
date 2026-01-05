@@ -1,0 +1,54 @@
+<!-- 14. HTML form validation using JavaScript events -->
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate() {
+  let x = document.getElementById("name").value;
+  if (x === "") {
+    alert("Name required");
+    return false;
+  }
+  alert("Form submitted");
+  return true;
+}
+
+function checkInput() {
+  let x = document.getElementById("name").value;
+  if (x.length < 3) {
+    alert("Minimum 3 characters");
+  }
+}
+</script>
+</head>
+<body>
+<form onsubmit="return validate()"> 
+    
+  <label>Name:</label><br>
+  <input type="text"><br><br>
+
+  <label>Email:</label><br>
+  <input type="email"><br><br>
+
+  <label>Password:</label><br>
+  <input type="password"><br><br>
+
+  <label>Gender:</label><br>
+  <input type="radio" name="gender"> Male
+  <input type="radio" name="gender"> Female<br><br>
+
+  <label>Course:</label><br>
+  <select>
+    <option>HTML</option>
+    <option>CSS</option>
+    <option>JavaScript</option>
+  </select><br><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+ 
+<input type="text" id="name" oninput="checkInput()">
+<input type="submit">
+</form>
+</body>
+</html>

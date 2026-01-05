@@ -1,0 +1,26 @@
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+#main-header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.highlight {
+    font-weight: bold;
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 5px;
+}
+h1, h2, footer p {
+    text-transform: uppercase;
+    border-bottom: 2px dashed lightgray;
+}
+.content-box p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding-left: 10px;
+}

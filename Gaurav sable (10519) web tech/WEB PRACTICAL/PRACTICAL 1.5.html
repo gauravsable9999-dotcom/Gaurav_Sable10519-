@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Web Page Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue; /* Full webpage background */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            padding: 1em;
+        }
+
+        article {
+            flex: 3;
+            margin-right: 1em;
+        }
+        section {
+            margin-bottom: 1em;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+        .highlight-red {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Green color animation for "About Us" */
+        @keyframes greenPulse {
+            0% { color: darkgreen; }
+            50% { color: limegreen; }
+            100% { color: darkgreen; }
+        }
+
+        .green-animate {
+            animation: greenPulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="highlight-red">Welcome to My Website</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section id="home">
+                <h2>Home</h2>
+                <p>This is the homepage where you can learn all about what we do.</p>
+            </section>
+            <section id="about">
+                <h2 class="green-animate">About Us</h2>
+                <p>We are passionate about building websites that are semantic and accessible.</p>
+            </section>
+            <section id="blog">
+                <h2>Latest Blog Posts</h2>
+                <article>
+                    <h3>Understanding Semantic HTML</h3>
+                    <p>Semantic HTML helps improve accessibility and SEO for your website.</p>
+                </article>
+                <article>
+                    <h3>Why CSS Grid is Awesome</h3>
+                    <p>CSS Grid makes creating complex layouts much easier and cleaner.</p></article>
+            </section>
+        </article><aside>
+            <h3>Quick Links</h3>
+            <a href="https://www.example.com/results1" target="_blank">Exam Results 2025</a>
+            <a href="https://www.example.com/results2" target="_blank">Admission Results</a>
+            <a href="https://www.example.com/results3" target="_blank">Scholarship Results</a>
+            <a href="https://www.example.com/results4" target="_blank">Recruitment Results</a> </aside> </main>
+     <footer><p>&copy; 2025 My Awesome Website. All rights reserved.</p></footer>
+</body>
+</html>

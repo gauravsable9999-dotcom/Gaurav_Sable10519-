@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff4d4d; /* red background */
+            margin: 40px;
+        }
+        form {
+            background: #fff;
+            padding: 25px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .horizontal-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 8px;
+        }
+        .horizontal-options label {
+            font-weight: normal;
+        }
+        }
+        input[type="reset"] {
+            background-color: #6c757d;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff; /* make footer visible on red background */
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+     <form action="#" method="post">
+        <h2>User Information Form</h2>
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="horizontal-options">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other" checked> Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Interests:</label>
+            <div class="horizontal-options">
+                <label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="Music"> Music</label>
+                <label><input type="checkbox" name="interests" value="Travel"> Travel</label>
+                <label><input type="checkbox" name="interests" value="Other" checked> Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">-- Select your country --</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </div>
+    </form>
+
+    <footer>
+        By Design: Gaurav Sable
+    </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- 19. Simple drawing using <canvas> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="300" height="200" style="border:1px solid black;"></canvas>
+
+<script>
+let c = document.getElementById("myCanvas");
+let ctx = c.getContext("2d");
+
+ctx.fillStyle = "red";
+ctx.fillRect(20, 20, 100, 60);
+
+ctx.beginPath();
+ctx.arc(200, 60, 30, 0, 2 * Math.PI);
+ctx.fillStyle = "blue";
+ctx.fill();
+
+ctx.fillStyle = "green";
+ctx.fillRect(80, 120, 140, 50);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- 16. Show / Hide elements and toggle CSS class -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hide {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<p id="text">This is a paragraph</p>
+<button onclick="toggle()">Show / Hide</button>
+
+<script>
+function toggle() {
+  document.getElementById("text").classList.toggle("hide");
+}
+</script>
+
+</body>
+</html>
